@@ -58,4 +58,17 @@ greetWorld(); // => 'hello world'
 // Example provided does not fully explain closures.
 
 ```
+```Javascript
+// Simple closure example, adds values to a base number:
 
+function createAdder(basenumber) {
+  return function(numberToAdd){
+    return basenumber + numberToAdd
+  }
+}
+
+var addTen = createAdder(10);
+
+console.log(addTen(5)); // => 15
+
+```
