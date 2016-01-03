@@ -72,3 +72,29 @@ var addTen = createAdder(10);
 console.log(addTen(5)); // => 15
 
 ```
+
+#### Node Scripts
+ When running a node script, a node checks the package.json file for a keyname. if a keyname matches, 
+ the associated console command is run. See "Scripts below for examples.
+
+```Javascript
+{
+  "name": "password-manager",
+  "version": "1.0.0",
+  "description": "Manage your passwords locally",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",// from console 
+    "start": "node app.js" /// From console: npm start
+  },
+  "keywords": [
+    "Erik",
+    "Grueter"
+  ],
+  "author": "Erik Grueter",
+  "license": "ISC",
+  "dependencies": {
+    "node-persist": "0.0.8"
+  }
+}
+```
