@@ -98,3 +98,17 @@ console.log(addTen(5)); // => 15
   }
 }
 ```
+
+#### Require Node Packages
+    To access an installed node package, use the built in require(); function in your app.js file
+ 
+
+```Javascript
+// App.js
+console.log('starting password manager');
+//Require Built in Node function.
+var store = require("node-persist");
+```
+
+
+
