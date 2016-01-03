@@ -34,3 +34,27 @@ console.log(age) // => 24
 
 ```
 
+#### Closures
+
+A function that has access to parent function variables.
+
+```Javascript
+function greetMaker (name) {
+  function greet () {
+    console.log('hello ' + name);
+  }
+  return greet;
+}
+
+var greetAndrew = greetMaker('Andrew');
+
+greetAndrew(); // => 'hello Andrew'
+
+var greetWorld = greetMaker('world');
+
+greetWorld(); // => 'hello world'
+
+// Example provided does not fully explain closures.
+
+```
+
