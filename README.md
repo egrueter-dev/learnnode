@@ -1,5 +1,6 @@
-# Node Noted
-Nodejs Notes and code snippets
+# Node.js Notes
+
+## Nodejs Notes and General Javascript Code Snippets
 
 
 #### For & While
