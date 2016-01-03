@@ -75,7 +75,7 @@ console.log(addTen(5)); // => 15
 
 #### Node Scripts
  When running a node script, a node checks the package.json file for a keyname. if a keyname matches, 
- the associated console command is run. See "Scripts below for examples.
+ the associated console command is run. See "Scripts:" below for examples.
 
 ```Javascript
 {
@@ -84,7 +84,7 @@ console.log(addTen(5)); // => 15
   "description": "Manage your passwords locally",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",// from console 
+    "test": "echo \"Error: no test specified\" && exit 1",// From console: npm test
     "start": "node app.js" /// From console: npm start
   },
   "keywords": [
